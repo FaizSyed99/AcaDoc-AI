@@ -202,6 +202,8 @@ export const ruRU = {
     process: "Обработать",
     create: "Создать",
     manage: "Управление",
+    source: "Источник",
+    notebook: "Блокнот",
     sources: "Источники",
     notebooks: "Блокноты",
     askAndSearch: "Запрос и поиск",

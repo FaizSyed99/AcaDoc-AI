@@ -202,6 +202,8 @@ export const itIT = {
     process: "Elabora",
     create: "Crea",
     manage: "Gestisci",
+    source: "Fonte",
+    notebook: "Quaderno",
     sources: "Fonti",
     notebooks: "Quaderni",
     askAndSearch: "Chiedi e cerca",

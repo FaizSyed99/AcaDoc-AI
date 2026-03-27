@@ -294,7 +294,7 @@ export function createReferenceLinkComponent(
             e.stopPropagation()
             onReferenceClick(type, id)
           }}
-          className="text-primary hover:underline cursor-pointer inline font-medium"
+          className="inline-flex items-center justify-center px-2 py-0.5 mx-0.5 text-xs font-medium text-white bg-primary rounded-full hover:bg-primary/90 cursor-pointer"
           type="button"
         >
           <IconComponent className="h-3 w-3 inline mr-1" aria-hidden="true" />

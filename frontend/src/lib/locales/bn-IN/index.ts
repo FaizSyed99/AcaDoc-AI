@@ -202,6 +202,8 @@ export const bnIN = {
     process: "প্রক্রিয়া",
     create: "তৈরি",
     manage: "ব্যবস্থাপনা",
+    source: "উৎস",
+    notebook: "নোটবুক",
     sources: "উৎসগুলি",
     notebooks: "নোটবুকগুলি",
     askAndSearch: "জিজ্ঞাসা ও অনুসন্ধান",

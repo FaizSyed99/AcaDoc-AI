@@ -122,7 +122,7 @@ export function AppSidebar() {
             <div className="relative flex items-center justify-center w-full">
               <Image
                 src="/logo.svg"
-                alt="Open Notebook"
+                alt="AcaDoc AI"
                 width={32}
                 height={32}
                 className="transition-opacity group-hover:opacity-0"
@@ -140,9 +140,14 @@ export function AppSidebar() {
             <>
               <div className="flex items-center gap-2">
                 <Image src="/logo.svg" alt={t.common.appName} width={32} height={32} />
-                <span className="text-base font-medium text-sidebar-foreground">
-                  {t.common.appName}
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-base font-medium text-sidebar-foreground leading-tight">
+                    {t.common.appName}
+                  </span>
+                  <span className="text-xs text-sidebar-foreground/60">
+                    Scholarly Suite
+                  </span>
+                </div>
               </div>
               <Button
                 variant="ghost"
