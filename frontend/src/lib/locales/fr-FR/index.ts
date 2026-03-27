@@ -202,6 +202,8 @@ export const frFR = {
     process: "Traiter",
     create: "Créer",
     manage: "Gérer",
+    source: "Source",
+    notebook: "Carnet",
     sources: "Sources",
     notebooks: "Carnets",
     askAndSearch: "Demander et rechercher",

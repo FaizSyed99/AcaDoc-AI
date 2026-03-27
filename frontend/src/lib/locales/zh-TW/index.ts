@@ -202,6 +202,8 @@ export const zhTW = {
     process: "處理",
     create: "創作",
     manage: "管理",
+    source: "來源",
+    notebook: "筆記本",
     sources: "來源",
     notebooks: "筆記本",
     askAndSearch: "詢問與搜尋",

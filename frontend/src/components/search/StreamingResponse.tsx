@@ -8,7 +8,7 @@ import { CheckCircle, Sparkles, Lightbulb, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { convertReferencesToMarkdownLinks, createReferenceLinkComponent } from '@/lib/utils/source-references'
+import { convertReferencesToMarkdownLinks, createReferenceLinkComponent, parseSourceReferences } from '@/lib/utils/source-references'
 import { useModalManager } from '@/lib/hooks/use-modal-manager'
 import { useTranslation } from '@/lib/hooks/use-translation'
 import { toast } from 'sonner'
@@ -53,6 +53,10 @@ export function StreamingResponse({
   if (!strategy && !answers.length && !finalAnswer && !isStreaming) {
     return null
   }
+
+  const uniqueCitations = finalAnswer
+    ? new Set(parseSourceReferences(finalAnswer).map(r => r.id)).size
+    : 0;
 
   return (
     <div
@@ -136,6 +140,12 @@ export function StreamingResponse({
             <CardTitle className="text-base flex items-center gap-2">
               <CheckCircle className="h-4 w-4 text-primary" />
               {t.common.finalAnswer}
+              {uniqueCitations >= 2 && (
+                <Badge variant="secondary" className="ml-auto bg-primary/10 text-primary border-primary/20 flex items-center gap-1 font-normal">
+                  <CheckCircle className="h-3 w-3" />
+                  Verified by AcaDoc
+                </Badge>
+              )}
             </CardTitle>
           </CardHeader>
           <CardContent>

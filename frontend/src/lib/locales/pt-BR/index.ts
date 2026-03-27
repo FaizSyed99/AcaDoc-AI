@@ -202,6 +202,8 @@ export const ptBR = {
     process: "Processar",
     create: "Criar",
     manage: "Gerenciar",
+    source: "Fonte",
+    notebook: "Caderno",
     sources: "Fontes",
     notebooks: "Cadernos",
     askAndSearch: "Perguntar e Buscar",

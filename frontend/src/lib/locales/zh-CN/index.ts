@@ -202,6 +202,8 @@ export const zhCN = {
     process: "处理",
     create: "创作",
     manage: "管理",
+    source: "来源",
+    notebook: "笔记本",
     sources: "来源",
     notebooks: "笔记本",
     askAndSearch: "询问与搜索",

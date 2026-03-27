@@ -9,7 +9,14 @@ const config: Config = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#0ea5e9",
+        },
+        background: "#020617",
+      },
+    },
   },
   plugins: [typography],
 };
